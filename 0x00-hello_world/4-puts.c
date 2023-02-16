@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- *Insert string using puts command
+ * main - Entry point
+ *Description - Insert string using puts command
+ *Return: Always 0
  */
 int main(void)
 {
