@@ -6,29 +6,24 @@
  */
 int main(void)
 {
-	int a = 0;
+	int a;
 	int b;
-	int c;
 
-	while (c <= 99)
+	for (a = 0; a < 9; a++)
 	{
-		b = (a / 10 + '0');
-		c = (a % 10 + '0');
-
-		if (b < c)
+		for (b = a + 1; b < 10; b++)
 		{
-			putchar(b);
-			putchar(c);
+			putchar((a % 10) + '0');
+			putchar((b % 10) + '0');
 
-			if (a != 89)
-			{
-				putchar(',');
-				putchar(' ');
+			if (a == 8 && b == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 			}
-		}
-		a++;
-
 	}
+
 	putchar('\n');
 
 	return (0);
