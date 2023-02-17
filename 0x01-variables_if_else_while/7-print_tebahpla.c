@@ -7,8 +7,8 @@
 int main(void)
 {
 	char mirror = 'z';
-	
-	while mirror >= 'a';
+
+	while (mirror >= 'a')
 
 	{
 		putchar(mirror);
