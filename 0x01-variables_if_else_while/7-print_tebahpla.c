@@ -6,11 +6,13 @@
  */
 int main(void)
 {
-	char mirror;
+	char mirror = 'z';
+	
+	while mirror >= 'a';
 
-	for (mirror = 'a'; mirror <= 'z'; mirror--)
 	{
 		putchar(mirror);
+		mirror--;
 	}
 	putchar('\n');
 	return (0);
