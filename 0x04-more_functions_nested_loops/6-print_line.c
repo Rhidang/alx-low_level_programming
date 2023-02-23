@@ -9,7 +9,7 @@ void print_line(int n)
 {
 	int insert = n;
 
-	for (insert = n; times > 0; times--)
+	for (insert = n; insert > 0; insert--)
 		_putchar('_');
 	if (n <= 0)
 	{
