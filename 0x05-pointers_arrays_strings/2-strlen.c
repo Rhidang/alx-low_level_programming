@@ -3,12 +3,16 @@
  * _strlen - Function to use
  * @s: String to check
  * Description: To check the length of a string
- * Return: Always zero
+ * Return: length
  */
 int _strlen(char *s)
 {
-	char s;
-	int len;
+	int len = 0;
 
-	len = strlen(s);
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+	return (len);
 }
