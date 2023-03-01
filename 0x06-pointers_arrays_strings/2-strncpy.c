@@ -3,22 +3,20 @@
  * _strncpy - Function to use
  * @dest: Destination file
  * @src: Source file
+ * @n: Bytes to be copied
  * Description: Function to copy a string
  * Return: Zero
  */
-char *_strncpy(char *dest, char *src int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int n = 0;
+	int i;
 
-	if (dest == NULL)
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	while (i < n)
 	{
-		return (NULL);
+		dest[i] = '\0';
+		i++;
 	}
-	while (src[n] != '\0')
-	{
-		dest[n] = src[n];
-		a++;
-	}
-	dest[n] = '\0';
 	return (dest);
 }
