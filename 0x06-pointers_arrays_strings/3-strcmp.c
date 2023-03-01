@@ -6,7 +6,7 @@
  * Description: Function to compare two strings
  * Return: Zero
  */
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int a = 0;
 
