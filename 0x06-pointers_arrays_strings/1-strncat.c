@@ -7,7 +7,7 @@
  * Description: Concatenates two files
  * Return: dest
  */
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0;
 	int b = 0;
