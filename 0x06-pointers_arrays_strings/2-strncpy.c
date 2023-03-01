@@ -6,19 +6,19 @@
  * Description: Function to copy a string
  * Return: Zero
  */
-char *_strncpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src int n)
 {
-	int a = 0;
+	int n = 0;
 
 	if (dest == NULL)
 	{
 		return (NULL);
 	}
-	while (src[a] != '\0')
+	while (src[n] != '\0')
 	{
-		dest[a] = src[a];
+		dest[n] = src[n];
 		a++;
 	}
-	dest[a] = '\0';
+	dest[n] = '\0';
 	return (dest);
 }
