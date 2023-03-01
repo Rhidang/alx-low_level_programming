@@ -26,7 +26,7 @@ char *rot13(char *r)
 		while (a[i] != 0 && r[j] != a[i])
 			i++;
 		if (r[j] == a[i])
-			r[j] = b[i]
+			r[j] = b[i];
 	}
 	return (r);
 }
