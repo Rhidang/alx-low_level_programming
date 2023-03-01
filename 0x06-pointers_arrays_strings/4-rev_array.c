@@ -4,11 +4,11 @@
  * @a: integer to reverse
  * @n: number of elements in the array
  * Description: Function to reverse the elements in an array
- * Return:Zero
+ * Return: Zero
  */
 void reverse_array(int *a, int n)
 {
-	int temp, begin = 0
+	int temp, begin = 0;
 	int end = n - 1;
 
 	while (begin < end)
