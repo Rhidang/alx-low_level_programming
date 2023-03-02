@@ -1,10 +1,5 @@
 #include <sdio.h>
-/**
- * main - Function to use
- *
- * Description: Code to perform magic
- * Return: Zero
- */
+
 int main(void)
 {
 	int n;
