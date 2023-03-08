@@ -16,7 +16,7 @@ int a_prime(int n, int x)
 	{
 		return (0);
 	}
-	return (a_prime(n, y + 1));
+	return (a_prime(n, x + 1));
 }
 
 /**
