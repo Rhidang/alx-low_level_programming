@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * factorial - Function to use
  * @n: Number to find factorial of
