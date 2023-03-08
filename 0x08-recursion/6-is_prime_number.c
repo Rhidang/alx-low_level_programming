@@ -12,12 +12,13 @@ int a_prime(int n, int x)
 	{
 		return (1);
 	}
-	if (n % y == 0)
+	if (n % x == 0)
 	{
 		return (0);
 	}
 	return (a_prime(n, y + 1));
 }
+
 /**
  * is_prime_number - Function to use
  * @n: Number to use
