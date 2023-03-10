@@ -2,10 +2,9 @@
 /**
  * main - Function to use
  * @argc: Argument counter
- * @argv: Argument vector
  * Return: Zero
  */
-int main(int argc, char *argv[])
+int main(int argc)
 {
 	if (argc > 0)
 		printf("%d\n", argc - 1);
