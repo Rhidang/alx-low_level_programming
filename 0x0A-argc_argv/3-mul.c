@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Function to use
  * @argc: Argument counter
@@ -8,11 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
+	int x;
+	int y;
+	int result;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (1);
+	return (1);
 	}
-	print("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	else
+	{
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
+		result = x * y;
+		printf("%d\n", result);
+	}
 	return (0);
 }
