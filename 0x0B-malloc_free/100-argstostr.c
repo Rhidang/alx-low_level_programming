@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *aout;
+	char *a;
 	int c, i, j, k;
 
 	if (ac == 0)
@@ -25,23 +25,23 @@ char *argstostr(int ac, char **av)
 			c++;
 		c++;
 	}
-	if (aout == NULL)
+	if (a == NULL)
 	{
-		free(aout);
+		free(a);
 		return (NULL);
 	}
 	for (i = j = k = 0; k < c; j++, k++)
 	{
 		if (av[i][j] == '\0')
 		{
-			aout[k] = '\n';
+			a[k] = '\n';
 			i++;
 			k++;
 			j = 0;
 		}
 		if (k < c - 1)
-			aout[k] = av[i][j];
+			a[k] = av[i][j];
 	}
-	aout[k] = '\0';
-	return (aout);
+	a[k] = '\0';
+	return (a);
 }
